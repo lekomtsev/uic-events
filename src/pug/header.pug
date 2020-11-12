@@ -1,0 +1,18 @@
+-
+  var menuLinks = [
+    {item: 'События', itemSup: '12'},
+    {item: 'Спикеры'},
+    {item: 'Фотоотчёт'},
+    {item: 'Партнёры'},
+    {item: 'Контакты'},
+    {item: '+7 (3412) 636-737'},
+    {item: 'uic@picom.ru'}
+  ]
+
+header.header
+  .container.header__container
+    +logo('logo-lg').header__logo
+    nav.navigation
+      +menu(menuLinks)
+      +feedback().header__feedback
+    +hamburger()

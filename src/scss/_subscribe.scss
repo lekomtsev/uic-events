@@ -1,0 +1,36 @@
+.subscribe {
+
+  &__form {
+    display: flex;
+    margin-bottom: 16px;
+  }
+
+  &__input {
+    padding: 0 16px;
+    width: 277px;
+    height: 48px;
+    border: 1px solid $color-cod-gray;
+
+    &::placeholder {
+      color: $color-cod-gray;
+    }
+  }
+
+  &__button {
+    width: 123px;
+  }
+
+  &__text {
+    font-weight: 600;
+    // font-size: 16px;
+    line-height: 172%;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      line-height: 14px;
+      color: $color-cod-gray;
+      border-bottom: 1px solid $color-cod-gray;
+    }
+  }
+}

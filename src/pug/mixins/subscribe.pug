@@ -1,0 +1,7 @@
+mixin subscribe(data)
+  .subscribe&attributes(attributes)
+    form.subscribe__form
+      input.subscribe__input(type="text" placeholder=`${data.placeholder}`)
+      button.subscribe__button.button.button--dark !{data.buttonText}
+    p.subscribe__text !{data.subscribeText}
+

@@ -1,0 +1,15 @@
+mixin menu(menuLinks)
+  ul.menu&attributes(attributes)
+    each menuLink, index in menuLinks
+      if index === 0
+        li.menu__item.menu__control
+          img.logo__image(src="images/logo-lg.svg" alt="Удмуртская Интернет-конференция UIC")
+          button.menu__close(aria-label="close button")
+      if index === 5 || index === 6
+        li.menu__item.menu__feedback
+          a.menu__link(href="#") !{menuLink.item}
+      else
+        li.menu__item
+          a.menu__link(href="#") !{menuLink.item}
+            if menuLink.itemSup
+              span.menu__link-sup !{menuLink.itemSup}

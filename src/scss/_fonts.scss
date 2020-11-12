@@ -1,0 +1,36 @@
+// stylelint-disable no-empty-source
+
+@font-face {
+  src: url("../fonts/RFTone-Light/RFTone-Light.woff2") format("woff2"), url("../fonts/RFTone-Light/RFTone-Light.woff") format("woff");
+  font-family: "RFTone";
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../fonts/RFTone-LightItalic/RFTone-LightItalic.woff2") format("woff2"), url("../fonts/RFTone-LightItalic/RFTone-LightItalic.woff") format("woff");
+  font-family: "RFTone";
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  src: url("../fonts/RFTone-Regular/RFTone-Regular.woff2") format("woff2"), url("../fonts/RFTone-Regular/RFTone-Regular.woff") format("woff");
+  font-family: "RFTone";
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../fonts/RFTone-Bold/RFTone-Bold.woff2") format("woff2"), url("../fonts/RFTone-Bold/RFTone-Bold.woff") format("woff");
+  font-family: "RFTone";
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("../fonts/RFTone-Black/RFTone-Black.woff2") format("woff2"), url("../fonts/RFTone-Black/RFTone-Black.woff") format("woff");
+  font-family: "RFTone";
+  font-weight: 700;
+  font-style: normal;
+}

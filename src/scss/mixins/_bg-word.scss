@@ -1,0 +1,15 @@
+@mixin bg-word($word, $deg) {
+  &::before {
+    content: $word;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    font-weight: bold;
+    font-size: 288px;
+    line-height: 123%;
+    letter-spacing: 0.01em;
+    color: $color-vista-white;
+    transform: translate(-50%, -50%) rotate($deg);
+  }
+}

@@ -1,0 +1,24 @@
+- var years = ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019'];
+
+-
+  var events = [
+  {colorClass: 'tile__badge--yellow', colorBgClass: 'tile__round--yellow', badge: 'UIC business', date: '29 апреля', time: '10:00', description: 'Как получить больше клиентов из интернета: комплексная работа с сайтом и соцсетями', addition: 'Профориентационный семинар', amount: '4 900'},
+  {colorClass: 'tile__badge--blue', colorBgClass: 'tile__round--blue', badge: 'UIC business', date: '11 мая', time: '16:00', description: 'Эффективный SMM: как быть на связи с клиентом', addition: 'Профориентационный семинар',  amount: 'Бесплатно'},
+  {colorClass: 'tile__badge--violet', colorBgClass: 'tile__round--violet', badge: 'UIC business', date: '28 июня', time: '9:00', description: 'Тысяча и один лайк или волшебные сказки Тани Равиловой',addition: 'Профориентационный семинар', amount: '2000'},
+  {colorClass: 'tile__badge--yellow', colorBgClass: 'tile__round--yellow', badge: 'UIC business', date: '1 июля', time: '11:00', description: 'Создаем продающий контент для социальных сетей', addition: 'Профориентационный семинар', amount: '6000'},
+  {colorClass: 'tile__badge--violet', colorBgClass: 'tile__round--violet', badge: 'UIC business', date: '14 июля', time: '15:40', description: 'Настройка таргетированной рекламы в социальных сетях', addition: 'Профориентационный семинар', amount: 'Бесплатно'},
+  {colorClass: 'tile__badge--green', colorBgClass: 'tile__round--green', badge: 'UIC business', date: '14 июля', time: '15:40', description: 'Республиканский ИТ-кубок для школьников', addition: 'Профориентационный семинар', amount: 'Бесплатно'},
+  {colorClass: 'tile__badge--blue', colorBgClass: 'tile__round--blue', badge: 'UIC business', date: '4 авгутса', time: '17:00', description: 'Marketing Meetup', addition: 'Профориентационный семинар', amount: 'Бесплатно'},
+  {colorClass: 'tile__badge--yellow', colorBgClass: 'tile__round--yellow', badge: 'UIC business', date: '24 сентября', time: '18:30', description: 'Digital-трансформация бизнеса: инструменты и технологии', addition: 'Профориентационный семинар', amount: '500'},
+  {colorClass: 'tile__badge--green', colorBgClass: 'tile__round--green', badge: 'UIC business', date: '10 октября', time: '19:00', description: 'Прикладной интернет-маркетинг', addition: 'Профориентационный семинар', amount: 'Бесплатно'}
+  ]
+
+
+section.archive
+  .container
+    h1.section-title.archive__title Архив событий
+  +history(years)
+  .container
+    .events__list
+      +tile(events)
+    +pagination()

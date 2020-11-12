@@ -1,0 +1,19 @@
+-
+  var footerSubscribe = {
+    placeholder: "Ваш e-mail",
+    buttonText: "",
+    subscribeText: "Подпишитесь на новостную рассылку и будте в курсе всех событий"
+  };
+
+footer.footer
+  .container
+    .footer__wrapper
+      .footer__logo-wrapper
+        +logo('logo-lg').footer__logo
+      +app().footer__app
+      +subscribe(footerSubscribe).footer__subscribe
+      +picom()
+      +feedback().footer__feedback
+      +social().footer__social
+
+

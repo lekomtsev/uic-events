@@ -1,0 +1,20 @@
+section.ticket
+  .container
+    +browser().ticket__browser
+    .ticket__wrapper
+      .ticket__text
+        h1.ticket__title Составляем CJM (карту путей пользователя)
+        ul.ticket__list
+          li.ticket__list-item.ticket__list-item--round Профориентационный семинар
+          li.ticket__list-item.ticket__list-item--date 29 апреля 2019
+            span 10:00
+          li.ticket__list-item.ticket__list-item--point Конференц-зал «Пиком» (ул. Красногеройская, 16)
+        .ticket__bottom
+          a.ticket__button.button.button--dark Зарегистрироваться
+          .ticket__amount 6000 ₽
+      .ticket__image-wrapper
+        img.ticket__image(src="images/ticket-preview.jpg" alt="Составляем CJM")
+        .ticket__question Вопросы можно задать по телефону:&nbsp;
+          a.ticket__question-phone(href="tel: +7 (3412) 636-737") +7 (3412) 636-737
+
+

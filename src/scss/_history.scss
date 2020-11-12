@@ -1,0 +1,58 @@
+.history {
+  max-width: 1200px;
+  margin: 0 auto 45px;
+  position: relative;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 14px;
+    width: auto;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      .history__link {
+        color: $color-rose-white;
+        background: $color-cod-gray;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 0 9px;
+    line-height: 28px;
+    height: 28px;
+    text-decoration: none;
+    color: $color-cod-gray;
+    border: 1px solid transparent;
+    transition: 0.2s ease-out;
+
+    &:hover {
+      border: 1px solid $color-cod-gray;
+    }
+  }
+
+  &__arrow {
+    display: none;
+    position: absolute;
+    right: 37px;
+    top: -49px;
+    width: 19px;
+    height: 11px;
+    background: url('../images/slider-arrow.svg') no-repeat center;
+
+    &--prev {
+      right: 84px;
+    }
+
+    &--next {
+      transform: rotate(180deg);
+    }
+  }
+}

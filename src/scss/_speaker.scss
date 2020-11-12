@@ -1,0 +1,54 @@
+.speaker {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $color-cod-gray;
+  padding: 24px 0 23px;
+
+  &:first-child {
+    border-top: 1px solid $color-cod-gray;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    width: 33.5%;
+  }
+
+  &__photo {
+    margin-right: 32px;
+  }
+
+  &__name {
+    font-weight: 600;
+  }
+
+  &__body,
+  &__footer {
+    align-self: flex-end;
+    padding-bottom: 8px;
+  }
+
+  &__body {
+    width: 33%;
+  }
+
+  &__name,
+  &__position,
+  &__job,
+  &__city {
+    line-height: 172%;
+  }
+
+  &__footer {
+    display: flex;
+    width: 33.5%;
+  }
+
+  &__job {
+    width: 62%;
+  }
+
+  &__city {
+    width: 38%;
+  }
+}

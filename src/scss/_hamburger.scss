@@ -1,0 +1,28 @@
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 16px;
+  width: 61px;
+  height: 48px;
+  border: 1px solid $color-black;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    margin-left: -10px;
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background: $color-black;
+
+    &:first-child {
+      top: 35%;
+    }
+
+    &:last-child {
+      top: 61%;
+    }
+  }
+}

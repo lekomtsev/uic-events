@@ -1,0 +1,10 @@
+-
+  var guests = ['yandex', 'grape', 'reds_keds', 'agima', 'mail_ru', 'google', 'begun', 'turbomilk'];
+
+
+section.guests
+  .swiper-container
+    ul.guests__list.swiper-wrapper
+      each guest in guests
+        li.guests__item.swiper-slide
+          img.guests__image(src=`images/guests/${guest}.svg` alt=`${guest}`)

@@ -1,0 +1,8 @@
+mixin members(data)
+  .members(class=`${data[0].classActive === "" ? "" : data[0].classActive}`)
+    each list, index in data
+      .members__title !{list.title}
+      ul.members__list
+        each item in list.imagesInfo
+          li.members__item
+            img(src=`images/organaizer/${item.image}.svg` alt=`${item.alt}`)

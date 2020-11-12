@@ -1,0 +1,54 @@
+@import "social";
+
+.promo {
+  padding: 26px 0 50px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 68px 120px 76px 52px;
+    height: 491px;
+    border: 1px solid $color-cod-gray;
+    border-top: none;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    width: 502px;
+  }
+
+  &__title {
+    margin: 0 0 19px 0;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 123%;
+    letter-spacing: 0.01em;
+
+    span {
+      color: #bf6969;
+    }
+  }
+
+  &__description {
+    span {
+      color: #bf6969;
+    }
+  }
+
+  &__social {
+    margin-top: auto;
+
+    .social__item {
+      margin-right: 48px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+}

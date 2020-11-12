@@ -1,0 +1,12 @@
+.feedback {
+  display: flex;
+
+  &__item {
+    line-height: 172%;
+
+    &:last-child {
+      letter-spacing: 0.07em;
+    }
+  }
+}
+

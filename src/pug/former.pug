@@ -1,0 +1,20 @@
+-
+  var cards = [
+    {date: '11 мая', quantity: 12, description: 'Как получить больше клиентов из интернета: комплексная работа с сайтом и соцсетями', imageNum: '1'},
+    {date: '24 июля', quantity: 5, description: 'Эффективный SMM: как быть на связи с клиентом ', imageNum: '2'},
+    {date: '8 сентября', quantity: 3, description: 'Marketing Meetup', imageNum: '3'},
+    {date: '24 июля', quantity: 5, description: 'Эффективный SMM: как быть на связи с клиентом', imageNum: '4'},
+    {date: '8 сентября', quantity: 3, description: 'Тысяча и один лайк или волшебные сказки Тани Равиловой', imageNum: '5'},
+    {date: '11 мая', quantity: 12, description: 'Создаем продающий контент для социальных сетей', imageNum: '6'},
+    {date: '11 мая', quantity: 12, description: 'Настройка таргетированной рекламы в социальных сетях', imageNum: '7'},
+    {date: '24 июля', quantity: 5, description: 'Республиканский ИТ-кубок для школьников', imageNum: '8'},
+    {date: '8 сентября', quantity: 3, description: 'Digital-трансформация бизнеса: инструменты и технологии', imageNum: '9'}
+  ];
+
+section.former
+  .container
+    h2.section-title.former__title Как это было
+    p.section-description.former__description Фотоотчёты с проведенных мероприятий
+    .card-wrapper
+      +card(cards)
+    a.button.former__button(href="#") Показать еще

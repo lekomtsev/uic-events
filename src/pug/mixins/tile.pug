@@ -1,0 +1,17 @@
+mixin tile(events)
+  each evt in events
+    a.tile(href="#")&attributes(attributes)
+      .tile__header
+        .tile__round(class=`${evt.colorBgClass}`)
+        .tile__date !{evt.date}
+        .tile__time !{evt.time}
+        .tile__badge(class=`${evt.colorClass}`) !{evt.badge}
+      .tile__body
+        .tile__description !{evt.description}
+        .tile__addition !{evt.addition}
+      .tile__footer
+        .tile__amount= evt.amount === 'Бесплатно' ? `${evt.amount}` : `${evt.amount} ₽`
+        .tile__entry Записаться
+
+
+

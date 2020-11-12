@@ -1,0 +1,15 @@
+mixin card(cards)
+  each card, index in cards
+    .card
+      .card__header
+        .card__date !{card.date}
+        .card__quantity !{card.quantity} фото
+      .card__body
+        .card__description !{card.description}
+        img.card__preview(src=`images/photo-report/preview/preview-${card.imageNum}.jpg` alt="#")
+      .card__gallery
+        a.card__gallery-image(href=`images/former-gallery/1.jpg`)
+        a.card__gallery-image(href=`images/former-gallery/2.jpg`)
+        a.card__gallery-image(href=`images/former-gallery/3.jpg`)
+
+

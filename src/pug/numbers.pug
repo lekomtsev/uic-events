@@ -1,0 +1,23 @@
+-
+  var numbersList = [
+      {digit: '11', text: 'лет в образовании'},
+      {digit: '40', text: 'проведенных мероприятий'},
+      {digit: '350', text: 'академических часов'},
+      {digit: '4274', text: 'участников мероприятий'}
+    ]
+
+section.numbers
+  .container
+    h2.section-title.numbers__title UIC в цифрах
+    .numbers__description-wrapper
+      p.section-description.numbers__description Интернет — это уникальная площадка для развития. Мы считаем, что узнавать новое и постоянно развиваться — это залог успеха для отрасли, региона, компании, человека. Поэтому мы не только развиваемся сами, но и помогаем другим
+      p.section-description.numbers__description Вот уже 10 лет мы проводим мероприятия. Студенты, школьники, предприниматели, государственные служащие, маркетологи, дизайнеры — на UIC у каждого есть возможность узнать что-то новое
+    ul.numbers__list
+      each item in numbersList
+        li.numbers__item
+          .numbers__item-map
+            span !{item.digit}
+          .numbers__item-text !{item.text}
+
+
+

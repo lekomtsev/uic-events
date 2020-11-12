@@ -1,0 +1,90 @@
+-
+  var organizers = [
+    {
+      title: 'Организаторы',
+      imagesInfo: [
+        {image: 'territoriya_menedzhmenta', alt: 'Территория менеджмента'},
+        {image: '8_chelovek', alt: '8 человек'},
+        {image: 'kvantorium_izhevsk', alt: 'Кванториюм Ижевск'},
+        {image: 'gorod_fm', alt: 'Город ФМ'},
+        {image: 'koordinayionnyy_tsentr', alt: 'Координационный центр'},
+        {image: 'picom', alt: 'Пиком'},
+        {image: 'peshta', alt: 'Пешта'},
+        {image: 'go_university', alt: 'Go university'},
+        {image: 'biznes_inkubator', alt: 'Бизнес инкубатор'},
+        {image: 'delovaya_reputatsiya', alt: 'Деловая репутация'},
+        {image: 'markovskiye_forumy', alt: 'Марковские форумы'},
+        {image: 'fanlife', alt: 'Фанлайф'},
+        {image: 'uni_sender', alt: 'Unisender'},
+        {image: 'comanda', alt: 'Команда'},
+        {image: 'tochka', alt: 'Точка'},
+        {image: 'moi_sklad', alt: 'Мой склад'},
+        {image: 'susanin', alt: 'Сусанин'},
+        {image: 'media_service', alt: 'Медиа-скрвис'}
+      ],
+      classActive: 'members--active'
+    }
+  ];
+
+-
+  var members = [
+    {
+      title: 'При участии',
+      imagesInfo: [
+        {image: 'territoriya_menedzhmenta', alt: 'Территория менеджмента'},
+        {image: '8_chelovek', alt: '8 человек'},
+        {image: 'kvantorium_izhevsk', alt: 'Кванториюм Ижевск'},
+        {image: 'gorod_fm', alt: 'Город ФМ'},
+        {image: 'koordinayionnyy_tsentr', alt: 'Координационный центр'},
+        {image: 'picom', alt: 'Пиком'},
+        {image: 'peshta', alt: 'Пешта'},
+        {image: 'go_university', alt: 'Go university'},
+        {image: 'biznes_inkubator', alt: 'Бизнес инкубатор'},
+        {image: 'delovaya_reputatsiya', alt: 'Деловая репутация'},
+        {image: 'markovskiye_forumy', alt: 'Марковские форумы'},
+        {image: 'fanlife', alt: 'Фанлайф'},
+        {image: 'uni_sender', alt: 'Unisender'},
+        {image: 'comanda', alt: 'Команда'},
+        {image: 'tochka', alt: 'Точка'},
+        {image: 'moi_sklad', alt: 'Мой склад'},
+        {image: 'susanin', alt: 'Сусанин'},
+        {image: 'media_service', alt: 'Медиа-скрвис'},
+      ],
+      classActive: ''
+    }
+  ];
+
+-
+  var supports = [
+    {
+      title: 'При поддержке',
+      imagesInfo: [
+        {image: 'territoriya_menedzhmenta', alt: 'Территория менеджмента'},
+        {image: '8_chelovek', alt: '8 человек'},
+        {image: 'kvantorium_izhevsk', alt: 'Кванториюм Ижевск'},
+        {image: 'gorod_fm', alt: 'Город ФМ'},
+        {image: 'koordinayionnyy_tsentr', alt: 'Координационный центр'},
+        {image: 'picom', alt: 'Пиком'},
+        {image: 'peshta', alt: 'Пешта'},
+        {image: 'go_university', alt: 'Go university'},
+        {image: 'biznes_inkubator', alt: 'Бизнес инкубатор'},
+        {image: 'delovaya_reputatsiya', alt: 'Деловая репутация'},
+        {image: 'markovskiye_forumy', alt: 'Марковские форумы'},
+        {image: 'fanlife', alt: 'Фанлайф'},
+        {image: 'uni_sender', alt: 'Unisender'},
+        {image: 'comanda', alt: 'Команда'},
+        {image: 'tochka', alt: 'Точка'},
+        {image: 'moi_sklad', alt: 'Мой склад'},
+        {image: 'susanin', alt: 'Сусанин'},
+        {image: 'media_service', alt: 'Медиа-скрвис'}
+      ],
+      classActive: ''
+    }
+  ];
+
+- var allPartners = [organizers, members, supports];
+
+section.partners
+  .container
+    each partner in allPartners
+      +members(partner)

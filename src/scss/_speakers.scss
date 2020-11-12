@@ -1,0 +1,23 @@
+@import "speaker";
+
+.speakers {
+  padding: 76px 0;
+  position: relative;
+
+  @include bg-word("speakers", -10deg);
+
+  &__title {
+    margin-bottom: 22px;
+  }
+
+  &__description {
+    margin-bottom: 36px;
+    max-width: 600px;
+  }
+
+  &__button {
+    display: block;
+    margin: 49px auto 0;
+    width: 146px;
+  }
+}

@@ -1,0 +1,33 @@
+.browser {
+  display: flex;
+  align-items: center;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 17px;
+    width: 100%;
+    height: 61px;
+    border: 1px solid $color-cod-gray;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      margin-right: 11px;
+      width: 24px;
+      height: 24px;
+      background: url("../images/union.svg") no-repeat center;
+    }
+  }
+
+  &__control {
+    width: 182px;
+    background: url('../images/browser-controls.svg') no-repeat center;
+
+  }
+
+}

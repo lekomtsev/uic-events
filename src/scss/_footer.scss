@@ -1,0 +1,86 @@
+@import "app";
+
+.footer {
+  // padding: 137px 0 40px;
+  padding: 124px 0 40px;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    &-wrapper {
+      margin-bottom: 49px;
+      width: 33.33%;
+    }
+
+    .logo__description {
+      margin-top: 13px;
+      line-height: 148%;
+    }
+  }
+
+  &__app {
+    width: 33.33%;
+  }
+
+  &__subscribe {
+    width: 33.33%;
+
+    .subscribe__input {
+      width: auto;
+      flex-grow: 1;
+    }
+
+    .subscribe__button {
+      padding: 0;
+      width: 48px;
+      height: 48px;
+      background-image: url('../images/send.svg');
+      background-position: 37% center;
+      background-repeat: no-repeat;
+    }
+
+    .subscribe__text {
+      padding-right: 33px;
+      line-height: 148%;
+    }
+  }
+
+  &__feedback {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 33.33%;
+  }
+
+  &__social {
+    flex-wrap: wrap;
+    width: 175px;
+
+    .social__item {
+      margin-right: 28px;
+
+      &:nth-child(2n+2) {
+        margin-right: 0;
+      }
+    }
+
+    .social__link {
+      display: inline-block;
+      line-height: 172%;
+    }
+  }
+}
+
+.picom {
+  width: 33.33%;
+  line-height: 197%;
+
+  a {
+    text-decoration: none;
+    color: $color-cod-gray;
+  }
+}
+
+

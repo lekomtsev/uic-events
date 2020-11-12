@@ -1,0 +1,51 @@
+.numbers {
+  padding: 20px 0 110px;
+
+  &__title {
+    margin-bottom: 23px;
+  }
+
+  &__description {
+    width: 540px;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 95px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    position: relative;
+
+    &-map {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 130px;
+      height: 130px;
+      background: url('../images/map-grid.svg') no-repeat center/cover;
+
+      span {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 123%;
+        background: $color-rose-white;
+      }
+    }
+
+    &-text {
+      position: absolute;
+      bottom: -39px;
+      left: 50%;
+      transform: translate(-50%);
+      font-weight: 600;
+      font-size: 17px;
+    }
+  }
+}

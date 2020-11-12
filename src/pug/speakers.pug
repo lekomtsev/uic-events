@@ -1,0 +1,19 @@
+-
+  var speakers = [
+    {photo: 'kseniya_konovalova', name: 'Ксения <br> Коновалова', position: 'Руководитель технических проектов', job: 'Digital Security', city: 'Москва', description: ''},
+    {photo: 'vladimir_sannikov', name: 'Владимир <br> Санников', position: 'Руководитель группы разработчиков', job: 'Yandex', city: 'Москва', description: ''},
+    {photo: 'anton_kastritskiy', name: 'Антон <br> Кастрицкий', position: 'frontend-architect', job: 'Банк «Точка»', city: 'Томск', description: ''},
+    {photo: 'tatayana_noskova', name: 'Татьяна <br> Носкова', position: 'Разработчик интерфейсов', job: 'AGIMA', city: 'Ижевск', description: ''},
+    {photo: 'natalya_gabitova', name: 'Наталья <br> Габитова', position: 'Ведущий креативный <br> frontend-разработчик', job: 'Digital Security', city: 'Санкт-Петербург', description: ''},
+    {photo: 'vladislav_prusov', name: 'Владислав <br> Прусов', position: 'frontend-разработчик', job: 'Талан', city: 'Ижевск', description: ''},
+  ];
+
+section.speakers
+  .container
+    h2.section-title.speakers__title У нас были
+    .section-description.speakers__description За все время наши мероприятия посетили более 100 спикеров из разных городов России
+    .speakers__wrapper
+      +speaker(speakers)
+      a.button.speakers__button(href="#") Показать еще
+
+

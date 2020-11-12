@@ -1,0 +1,30 @@
+@import "tile";
+@import "pagination";
+
+.events {
+  padding: 71px 0;
+  position: relative;
+
+  @include bg-word("events", -10deg);
+
+  &__title {
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    &-link {
+      align-self: flex-end;
+      padding-bottom: 4px;
+      color: $color-cod-gray;
+      text-decoration: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 46px;
+  }
+}

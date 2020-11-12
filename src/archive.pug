@@ -1,0 +1,14 @@
+extends pug/base
+
+prepend vars
+  - title = 'UIC – Удмуртская Интернет-конференция. УИК в Ижевске'
+  - description = 'UIC или УИК – это Удмуртская Интернет-конференция, проводимая в Ижевске для IT-специалистов. Бизнес семинар Хакатон включает доклады и мастер-классы специалистов ведущих российских IT-компаний, таких как UsabilityLab, Яндекс, E-legion'
+  - image = ''
+
+append vars
+  - link.icon16x16 = 'images/favicon.ico'
+
+block content
+  include pug/header
+  include pug/archive-event
+  include pug/footer

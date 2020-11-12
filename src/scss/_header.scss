@@ -1,0 +1,46 @@
+@import "logo";
+@import "hamburger";
+@import "menu";
+@import "feedback";
+
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    height: 123px;
+  }
+
+  &__logo {
+    .logo__image {
+      width: 61px;
+    }
+
+    .logo__description {
+      display: none;
+    }
+  }
+
+  &__feedback {
+    .feedback__item {
+      margin-right: 50px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-left: 60px;
+}
+
+
+
+
+
+
+

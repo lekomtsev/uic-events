@@ -1,0 +1,14 @@
+-
+  var becomePartSubscribe = {
+    placeholder: "Номер телефона",
+    buttonText: "Отправить",
+    subscribeText: "Нажимая кнопку «Отправить», Вы потверждаете что ознакомленны с <a href='#' target='_blank>'> условиями обработки персональных</a> данных и принимаете их"
+  };
+
+section.become-part
+  .container
+    .become-part__wrapper
+      h2.section-title.become-part__title Хотите стать частью UIC? Станьте нашим партнёром!
+      +subscribe(becomePartSubscribe).become-part__subscribe
+      a.become-part__link(href="#") Презентация для партнёров (pdf)
+

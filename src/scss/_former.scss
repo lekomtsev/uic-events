@@ -1,0 +1,20 @@
+@import "card";
+@import "subscribe";
+
+.former {
+  padding: 45px 0;
+
+  &__title {
+    margin-bottom: 22px;
+  }
+
+  &__description {
+    margin-bottom: 36px;
+  }
+
+  &__button {
+    display: block;
+    margin: 49px auto 0;
+    width: 146px;
+  }
+}

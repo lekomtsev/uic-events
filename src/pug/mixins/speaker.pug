@@ -1,0 +1,14 @@
+mixin speaker(speakers)
+  each speaker, index in speakers
+    .speaker&attributes(attributes)
+      .speaker__header
+        img.speaker__photo(src=`images/speakers/${speaker.photo}.png` alt=`${speaker.photo}`)
+        .speaker__name !{speaker.name}
+      .speaker__body
+        .speaker__position !{speaker.position}
+      .speaker__footer
+        .speaker__job !{speaker.job}
+        .speaker__city !{speaker.city}
+
+      if speaker.description
+        .speaker__description !{speaker.description}

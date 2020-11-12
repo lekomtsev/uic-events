@@ -1,0 +1,13 @@
+-
+  var socials = [
+    {title: 'vkontakte', href: 'https://vk.com/uic.online'},
+    {title: 'facebook', href: 'https://www.facebook.com/UIC.online'},
+    {title: 'instagram', href: 'https://www.instagram.com/picom_ltd/'},
+    {title: 'youtube', href: 'https://www.youtube.com/user/PicomLtd'}
+  ];
+
+mixin social()
+  ul.social&attributes(attributes)
+    each social in socials
+      li.social__item
+        a.social__link(href=`${social.href}` target="_blank") !{social.title}

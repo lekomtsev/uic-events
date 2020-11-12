@@ -1,0 +1,12 @@
+.logo {
+  &__image {
+    max-width: 100%;
+  }
+
+  &__description {
+    span {
+      display: block;
+      white-space: nowrap;
+    }
+  }
+}

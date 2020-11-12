@@ -1,0 +1,22 @@
+.guests {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 50px 0;
+  height: 467px;
+
+  @include bg-word("guests", -10deg);
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+
+  &__item {
+    text-align: center;
+  }
+}

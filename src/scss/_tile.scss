@@ -1,0 +1,133 @@
+.tile {
+  display: flex;
+  flex-direction: column;
+  padding: 44px 29px 38px 31px;
+  width: 33.333%;
+  height: 400px;
+  color: $color-cod-gray;
+  text-decoration: none;
+  border: 1px solid $color-cod-gray;
+
+  &:hover {
+    background: $color-cod-gray;
+
+    .tile__date,
+    .tile__time,
+    .tile__amount {
+      display: none;
+    }
+
+    .tile__badge {
+      display: block;
+    }
+
+    .tile__description {
+      color: $color-rose-white;
+    }
+
+    .tile__entry {
+      display: block;
+    }
+  }
+
+  &__header {
+    display: flex;
+    margin-bottom: 33px;
+  }
+
+  &__round {
+    margin-right: 17px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+      &--yellow {
+        background: $color-butter-cup;
+      }
+
+      &--blue {
+        background: $color-azure-radiance;
+      }
+
+      &--violet {
+        background: $color-electric-violet;
+      }
+
+      &--green {
+        background: $color-green-haze;
+      }
+  }
+
+  &__date {
+    margin-right: 35px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 1px;
+      right: -18px;
+      width: 1px;
+      height: 15px;
+      background: $color-cod-gray;
+      transform: rotate(21deg);
+    }
+  }
+
+  &__time {}
+
+  &__badge {
+    display: none;
+
+    &--yellow {
+      color: $color-butter-cup;
+    }
+
+    &--blue {
+      color: $color-azure-radiance;
+    }
+
+    &--violet {
+      color: $color-electric-violet;
+    }
+
+    &--green {
+      color: $color-green-haze;
+    }
+  }
+
+  &__description {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 144%;
+  }
+
+  &__addition {
+    margin-top: 16px;
+    line-height: 172%;
+    color: rgba(255, 247, 247, 0.56);
+  }
+
+  &__footer {
+    margin-top: auto;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  &__entry {
+    display: none;
+    color: $color-rose-white;
+  }
+
+  & + .tile {
+    border-left: none;
+  }
+
+  &:nth-child(3n+4) {
+    border-left: 1px solid $color-cod-gray;
+  }
+
+  &:nth-child(n+4) {
+    border-top: none;
+  }
+}

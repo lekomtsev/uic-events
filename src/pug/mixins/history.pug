@@ -1,0 +1,13 @@
+mixin history(years)
+  .history&attributes(attributes)
+    .swiper-container
+      ul.history__list.swiper-wrapper
+        each year in years
+          if year === '2016'
+            li.history__item.swiper-slide.history__item--active
+              a.history__link(href="#") !{year}
+          else
+            li.history__item.swiper-slide
+              a.history__link(href="#") !{year}
+    .history__arrow.history__arrow--prev
+    .history__arrow.history__arrow--next
